@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#061b2b">
+<title>InvestPro — Investment Dashboard Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="logo">↗</span> InvestPro</a>
+  <div class="top-actions"><button id="langBtn" class="ghost">বাংলা</button><button id="menuBtn" class="ghost mobile-only">☰</button><span id="userLabel">Demo User</span></div>
+</header>
+<div class="layout">
+<aside id="sidebar" class="sidebar">
+  <div class="side-caption" data-en="WORKSPACE" data-bn="ওয়ার্কস্পেস">WORKSPACE</div>
+  <button class="nav active" data-view="dashboard">▦ <span data-en="Dashboard" data-bn="ড্যাশবোর্ড">Dashboard</span></button>
+  <button class="nav" data-view="plans">▤ <span data-en="Investment Plans" data-bn="ইনভেস্টমেন্ট প্ল্যান">Investment Plans</span></button>
+  <button class="nav" data-view="deposit">＋ <span data-en="Deposit" data-bn="ডিপোজিট">Deposit</span></button>
+  <button class="nav" data-view="withdraw">↗ <span data-en="Withdraw" data-bn="উইথড্র">Withdraw</span></button>
+  <button class="nav" data-view="transactions">↻ <span data-en="Transactions" data-bn="লেনদেন">Transactions</span></button>
+  <button class="nav" data-view="referral">♧ <span data-en="Referral" data-bn="রেফারেল">Referral</span></button>
+  <div class="side-caption admin-caption" data-en="ADMIN DEMO" data-bn="অ্যাডমিন ডেমো">ADMIN DEMO</div>
+  <button class="nav" data-view="admin">⚙ <span data-en="Admin Panel" data-bn="অ্যাডমিন প্যানেল">Admin Panel</span></button>
+  <p class="sidebar-note" data-en="Prototype only. No real money is handled." data-bn="শুধু প্রোটোটাইপ। আসল টাকা লেনদেন হয় না।">Prototype only. No real money is handled.</p>
+</aside>
+<main id="main">
+  <section class="welcome">
+    <div><p class="eyebrow" data-en="YOUR FINANCIAL OVERVIEW" data-bn="আপনার আর্থিক সারসংক্ষেপ">YOUR FINANCIAL OVERVIEW</p><h1 data-en="Welcome back 👋" data-bn="স্বাগতম 👋">Welcome back 👋</h1><p class="muted" data-en="Track demo balances, plans and requests in one place." data-bn="ডেমো ব্যালেন্স, প্ল্যান ও আবেদন এক জায়গায় দেখুন।">Track demo balances, plans and requests in one place.</p></div>
+    <div class="pill"><span class="dot"></span><span data-en="Demo environment" data-bn="ডেমো পরিবেশ">Demo environment</span></div>
+  </section>
+  <div class="stats">
+    <article class="stat"><span data-en="Available Balance" data-bn="বর্তমান ব্যালেন্স">Available Balance</span><strong id="balance">৳ 5,000.00</strong><small data-en="Demo funds only" data-bn="শুধু ডেমো অর্থ">Demo funds only</small></article>
+    <article class="stat"><span data-en="Total Invested" data-bn="মোট ইনভেস্ট">Total Invested</span><strong id="invested">৳ 0.00</strong><small data-en="Across active plans" data-bn="সক্রিয় প্ল্যানের মোট">Across active plans</small></article>
+    <article class="stat"><span data-en="Demo Profit" data-bn="ডেমো লাভ">Demo Profit</span><strong id="profit">৳ 0.00</strong><small data-en="Not a real return" data-bn="বাস্তব রিটার্ন নয়">Not a real return</small></article>
+    <article class="stat"><span data-en="Pending Requests" data-bn="অপেক্ষমাণ আবেদন">Pending Requests</span><strong id="pending">0</strong><small data-en="Needs admin review" data-bn="অ্যাডমিন যাচাই করবে">Needs admin review</small></article>
+  </div>
+  <div id="view"></div>
+  <footer>© 2026 InvestPro <span data-en="• Educational frontend prototype" data-bn="• শিক্ষামূলক ফ্রন্টএন্ড প্রোটোটাইপ">• Educational frontend prototype</span></footer>
+</main>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
